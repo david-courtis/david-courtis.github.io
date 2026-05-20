@@ -1,0 +1,116 @@
+# Single source of truth for work / research experience.
+# Consumed by:
+#   - _pages/about.md  (homepage timeline; uses `bullets_short` if present, else `bullets`)
+#   - _pages/cv.md     (CV page; uses `bullets`, filters by `category`)
+#
+# Order is reverse-chronological by end date — change the order here and both
+# pages reflect it automatically.
+
+- title: AI/ML Graduate Researcher
+  org: University of Toronto, Data-Driven Decision Making Lab
+  org_url: https://d3m.mie.utoronto.ca/
+  location: Toronto
+  date_range: "Dec 2025 – Present"
+  category: industry
+  bullets:
+    - "Major Publication — ICLR 2026 introducing a neurosymbolic agentic planning framework that enforces sound and deterministic reasoning for LLM-based agents in open-world environments, improving previous baselines by 373% and attaining state-of-the-art across central benchmarks."
+    - "Design and build autonomous LLM-driven neuro-symbolic RL agents that discover mechanics in open world, partially observable, unknown environments through systematic experimentation and world model learning."
+    - "Architected a multi-phase agentic pipeline with independent LLM reasoning calls per action cycle (analysis, modeling, exploration), each producing structured JSON via Pydantic schema-enforced outputs."
+    - "Designed MCP-based tool server architecture decomposing the system into discoverable, pluggable services: game environment interaction, perceptual analysis, knowledge store, and symbolic verification."
+  bullets_short:
+    - "Contributing author on an ICLR 2026 paper on neurosymbolic agentic planning for LLM agents — 373% over baselines, SOTA across benchmarks."
+    - "Building autonomous neuro-symbolic RL agents that discover open-world mechanics through experimentation and world-model learning."
+
+- title: Assistant Researcher
+  org: Queen's University, Machine Intelligence & Biocomputing Lab
+  org_url: https://sites.google.com/site/tinghushomepage
+  location: Kingston
+  date_range: "May 2024 – May 2025"
+  category: leadership
+  bullets:
+    - "Invented a dictionary learning methodology using sparse autoencoders to extract personality traits directly from LLM latent spaces, enabling direct steering of LLM behaviours by modulating neuron activation rather than through widely used prompting."
+    - "Identified universal latent features between differing LLM architectures and training sets, and found ways to interpret extracted features, enabling 2+ orders of magnitude more efficient feature quality evaluation for personality classification."
+  bullets_short:
+    - "Invented sparse-autoencoder dictionary learning to extract personality traits from LLM latents — steers behaviour via neuron activation instead of prompting."
+    - "Found universal features across LLM architectures; 2+ orders of magnitude more efficient feature evaluation."
+
+- title: AI Systems Developer
+  org: Osler Health Solutions
+  org_url: https://www.linkedin.com/company/oslerhealthsolutions/
+  location: Toronto
+  date_range: "Dec 2023 – Sep 2024"
+  category: industry
+  bullets:
+    - "Designed and deployed to production a multi-stage agentic data processing pipeline for hospital surgical block schedule optimization into an existing client-facing product, involving a novel time-constrained optimization ML model, generating an additional ~C$300M in surgical revenues at Quincy, Belleville, and Trenton Hospitals."
+    - "Created EDAs of hospital client data pre/post-surgical optimization, used in stakeholder collaboration pitch to managers at EY, KPMG, and the Ontario Hospital Association Board of Directors, securing government approval for hospital use in Canada."
+  bullets_short:
+    - "Shipped a multi-stage surgical block-schedule optimizer to production — ~C$300M in added revenue across three Ontario hospitals."
+    - "EDAs drove pitches to EY, KPMG, and the OHA Board, securing federal approval for Canadian hospital rollout."
+
+- title: Software Developer
+  org: Distributive
+  org_url: https://distributive.network/
+  location: Kingston
+  date_range: "May 2023 – Dec 2023"
+  category: industry
+  bullets:
+    - "Maintained and reviewed 500k+ lines in a Node.js distributed computing platform; managed GitLab CI/CD pipelines and resolved 100k+ lines of technical debt."
+    - "Led the frontend refactor efforts behind a product for distributed AI inference, rewriting 50k+ lines of legacy React and enabling training, reinforcement/fine-tuning, LoRA, and distributed inference of common architectures via ONNX (LLM, VLM, VLA, Diffusion, CNN)."
+    - "Designed client-facing demos raising over $1M+ in VC funding, demonstrating on-demand distributed compute."
+    - "Data and backend architect behind a PostgreSQL system created to store, maintain, and access up to 4 PB of length-117 legendary-pair search-space data created through 1000+ core distributed computing."
+  bullets_short:
+    - "Refactored 50k+ lines of React to ship LoRA fine-tuning and distributed inference for LLM/VLM/VLA/Diffusion/CNN via ONNX."
+    - "Built a 4 PB PostgreSQL backend over 1000+ cores; client demos contributed to raising $1M+ in VC funding."
+
+- title: Consulting Project Manager
+  org: Queen's University, QMIND Design Team
+  org_url: https://qmind.ca/
+  location: Kingston
+  date_range: "May 2022 – May 2024"
+  category: leadership
+  bullets:
+    - "Identified latent features through Gated SAEs in PyTorch and expanded on research progress by modifying the architecture for extracting higher-dimensional representations using a stacked architecture."
+    - "Oversaw 4 project managers and 15+ design-team members across 8 months — mentoring, onboarding members onto Git and research methodologies, and ensuring development progress for national conference deadlines."
+  bullets_short:
+    - "Stacked Gated SAE architecture for higher-dim latent extraction in PyTorch."
+    - "Led 4 PMs and 15+ engineers across 8 months; onboarded members on Git, research methods, and conference-deadline development."
+
+- title: Lead of Computer Vision
+  org: Queen's University, QMIND Design Team
+  org_url: https://qmind.ca/
+  location: Kingston
+  date_range: "May 2022 – May 2024"
+  category: leadership
+  bullets:
+    - "Recreated code from paper in tiny-object detection in PyTorch and expanded on research progress by modifying the CNN architecture for application-specific limitations in non-local yield and disease detection."
+    - "Worked with client University of Nairobi to reduce labour time by 5+ orders of magnitude for local farmers by automating yield forecasting of maize fields through regressive density-based CNNs."
+    - "Deployed a full-stack React + Flask application for a live demo of the ML pipeline for client fundraising. **Won the Sustainable Technology award at CUCAI23.**"
+  bullets_short:
+    - "Density-based CNNs for U. Nairobi maize-yield forecasting — 5+ orders of magnitude labour reduction. **CUCAI23 Sustainable Tech award.**"
+    - "Reimplemented and extended a tiny-object detection paper in PyTorch for non-local yield and disease detection."
+
+- title: Lead of Full-Stack Development
+  org: Queen's University, Computing Student's Association
+  org_url: https://www.compsa.ca/about
+  location: Kingston
+  date_range: "May 2022 – May 2023"
+  category: leadership
+  bullets:
+    - "Replaced external hosting and outsourced frontend development for the official Queen's Computing Association website, eliminating 90% of total costs while keeping 1800+ monthly students connected to required university resources."
+    - "Slashed critical-path time by 20% by managing and training 3 first-year developers in full-stack web and professional development, encouraging agile methodologies, and putting contingency plans in place to ensure continuation of services."
+  bullets_short:
+    - "Brought Queen's CSA website in-house — cut hosting and dev costs by 90% while serving 1800+ monthly students."
+    - "Trained 3 first-year devs; introduced agile methodology and contingency planning, cutting critical-path time by 20%."
+
+- title: Software Test Automation Intern
+  org: Government of Canada
+  org_url: https://www.canada.ca/en.html
+  date_range: "May 2022 – Sep 2022"
+  category: industry
+  bullets:
+    - "Led the development of test automation for an employee management portal using Selenium WebDriver and the Oracle Testing Suite, reducing testing time by 98%."
+    - "Overhauled the entire employee-management-portal UI testing solution for improved test traceability and detection quality."
+    - "Established and integrated Oracle-compatible automation and testing libraries into the CI/CD pipeline."
+  bullets_short:
+    - "Automated employee-portal tests with Selenium + Oracle Testing Suite — 98% reduction in test time."
+    - "Integrated Oracle-compatible libraries into the CI/CD pipeline; revamped UI test traceability."

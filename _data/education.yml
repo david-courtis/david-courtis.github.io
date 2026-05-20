@@ -1,0 +1,18 @@
+# Single source of truth for education.
+# Consumed by both _pages/about.md and _pages/cv.md.
+
+- degree: Master of Applied Science (MASc)
+  institution: University of Toronto
+  institution_url: https://www.utoronto.ca/
+  location: Toronto, Canada
+  date_range: "2025 – Current"
+  bullets:
+    - "GPA 4.0 / 4.0 — LLM Reasoning, Embodied AI, Reinforcement Learning."
+
+- degree: Bachelor of Computing (Hons.)
+  institution: Queen's University
+  institution_url: https://www.queensu.ca/
+  location: Kingston, Canada
+  date_range: "2020 – 2025"
+  bullets:
+    - "GPA 3.95 / 4.0 — Mathematics and Artificial Intelligence Specialization."
