@@ -1,7 +1,65 @@
 {% include base_path %}
+<style>
+  /* Logo + nav layout that mirrors the page columns:
+     - Logo column matches the sidebar (15.25% wide, 1.69% right gutter, 250px max — same Susy span(2 of 12)).
+     - Nav column starts where .page__inner-wrap content starts (extra 4.24% padding-left = prefix(0.5 of 12)).
+     - On viewports below the sidebar breakpoint (1024px), the sidebar stacks above content,
+       so the logo just sits at the natural left edge of the masthead at a smaller size. */
+  .masthead__logo-link {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    line-height: 0;
+  }
+  .masthead__logo {
+    height: 36px;
+    width: auto;
+    display: block;
+    transition: filter 0.15s ease;
+  }
+  html[data-theme="dark"] .masthead__logo {
+    filter: invert(1) brightness(1.1);
+  }
+  .masthead__menu {
+    display: flex;
+    align-items: center;
+  }
+  @media (min-width: 1024px) {
+    .masthead__logo-link {
+      flex: 0 0 15.2542372881%;
+      max-width: 250px;
+      margin-right: 1.6949152542%;
+    }
+    .greedy-nav {
+      flex: 1 1 auto;
+      padding-left: 4.2372881356%;
+    }
+    .masthead__logo {
+      height: 56px;
+    }
+  }
+  @media (max-width: 1023px) {
+    .masthead__logo-link {
+      margin-right: 0.75em;
+    }
+    .greedy-nav {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+  }
+</style>
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
+      {% if site.author.institution_logo %}
+        <a class="masthead__logo-link" href="https://www.engineering.utoronto.ca/" target="_blank" rel="noopener" aria-label="University of Toronto Faculty of Applied Science &amp; Engineering">
+          {% if site.author.institution_logo contains '://' %}
+            <img class="masthead__logo" src="{{ site.author.institution_logo }}" alt="" />
+          {% else %}
+            <img class="masthead__logo" src="{{ site.author.institution_logo | prepend: '/images/' | prepend: base_path }}" alt="" />
+          {% endif %}
+        </a>
+      {% endif %}
       <nav id="site-nav" class="greedy-nav">
         <button><span class="navicon"></span></button>
         <ul class="visible-links">
