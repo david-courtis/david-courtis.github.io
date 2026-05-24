@@ -1,5 +1,5 @@
 ---
-title: "CISC 235 — Data Structures"
+title: "CISC 235: Data Structures"
 collection: teaching
 type: "Teaching Assistant"
 permalink: /teaching/2023-fall-cisc235
@@ -8,4 +8,4 @@ date: 2023-09-01
 location: "Kingston, Canada"
 ---
 
-Teaching assistant for the undergraduate Data Structures course.
+Design and implementation of advanced data structures and related algorithms. Topics will include complexity analysis, trees, graphs, hash tables, queues and heaps, sorting, and shortest paths.

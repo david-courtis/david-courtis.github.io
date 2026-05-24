@@ -10,7 +10,7 @@
   org: University of Toronto, Data-Driven Decision Making Lab
   org_url: https://d3m.mie.utoronto.ca/
   location: Toronto
-  date_range: "Dec 2025 – Present"
+  date_range: "Dec 2025 - Present"
   category: industry
   bullets:
     - "Major Publication — ICLR 2026 introducing a neurosymbolic agentic planning framework that enforces sound and deterministic reasoning for LLM-based agents in open-world environments, improving previous baselines by 373% and attaining state-of-the-art across central benchmarks."
@@ -25,7 +25,7 @@
   org: Queen's University, Machine Intelligence & Biocomputing Lab
   org_url: https://sites.google.com/site/tinghushomepage
   location: Kingston
-  date_range: "May 2024 – May 2025"
+  date_range: "May 2024 - May 2025"
   category: leadership
   bullets:
     - "Invented a dictionary learning methodology using sparse autoencoders to extract personality traits directly from LLM latent spaces, enabling direct steering of LLM behaviours by modulating neuron activation rather than through widely used prompting."
@@ -37,8 +37,8 @@
 - title: AI Systems Developer
   org: Osler Health Solutions
   org_url: https://www.linkedin.com/company/oslerhealthsolutions/
-  location: Toronto
-  date_range: "Dec 2023 – Sep 2024"
+  location: Kingston
+  date_range: "Dec 2023 - Sep 2024"
   category: industry
   bullets:
     - "Designed and deployed to production a multi-stage agentic data processing pipeline for hospital surgical block schedule optimization into an existing client-facing product, involving a novel time-constrained optimization ML model, generating an additional ~C$300M in surgical revenues at Quincy, Belleville, and Trenton Hospitals."
@@ -51,7 +51,7 @@
   org: Distributive
   org_url: https://distributive.network/
   location: Kingston
-  date_range: "May 2023 – Dec 2023"
+  date_range: "May 2023 - Dec 2023"
   category: industry
   bullets:
     - "Maintained and reviewed 500k+ lines in a Node.js distributed computing platform; managed GitLab CI/CD pipelines and resolved 100k+ lines of technical debt."
@@ -66,7 +66,7 @@
   org: Queen's University, QMIND Design Team
   org_url: https://qmind.ca/
   location: Kingston
-  date_range: "May 2022 – May 2024"
+  date_range: "May 2022 - May 2024"
   category: leadership
   bullets:
     - "Identified latent features through Gated SAEs in PyTorch and expanded on research progress by modifying the architecture for extracting higher-dimensional representations using a stacked architecture."
@@ -79,7 +79,7 @@
   org: Queen's University, QMIND Design Team
   org_url: https://qmind.ca/
   location: Kingston
-  date_range: "May 2022 – May 2024"
+  date_range: "May 2022 - May 2024"
   category: leadership
   bullets:
     - "Recreated code from paper in tiny-object detection in PyTorch and expanded on research progress by modifying the CNN architecture for application-specific limitations in non-local yield and disease detection."
@@ -93,7 +93,7 @@
   org: Queen's University, Computing Student's Association
   org_url: https://www.compsa.ca/about
   location: Kingston
-  date_range: "May 2022 – May 2023"
+  date_range: "May 2022 - May 2023"
   category: leadership
   bullets:
     - "Replaced external hosting and outsourced frontend development for the official Queen's Computing Association website, eliminating 90% of total costs while keeping 1800+ monthly students connected to required university resources."
@@ -105,7 +105,8 @@
 - title: Software Test Automation Intern
   org: Government of Canada
   org_url: https://www.canada.ca/en.html
-  date_range: "May 2022 – Sep 2022"
+  location: Toronto
+  date_range: "May 2022 - Sep 2022"
   category: industry
   bullets:
     - "Led the development of test automation for an employee management portal using Selenium WebDriver and the Oracle Testing Suite, reducing testing time by 98%."

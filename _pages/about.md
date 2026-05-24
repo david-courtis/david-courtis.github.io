@@ -97,16 +97,34 @@ redirect_from:
 }
 </style>
 
-I'm a graduate researcher at the University of Toronto, working in the Data-Driven Decision Making Lab under [Scott Sanner](https://d3m.mie.utoronto.ca/members/ssanner/). My research is on building neuro-symbolic architectures that can reason soundly and deterministically in open-world environments, with detours into interpretability, RL, and continual learning along the way.
+I'm a graduate researcher at the University of Toronto, working in the Data-Driven Decision Making Lab (D3M). My research is neuro-symbolic architectures that can verifiably reason and plan in open-world environments, with detours into interpretability, RL, and continual learning along the way.
 
 ## Current work
 
-I'm currently building autonomous neuro-symbolic RL agents that discover the mechanics of unknown environments through systematic experimentation and world-model learning.
+I'm currently building autonomous neuro-symbolic RL agents that discover the mechanics of unknown environments through systematic experimentation, knowledge representation, and world-model learning.
 
 <video autoplay loop muted playsinline preload="auto" style="max-width: 420px; width: 100%; height: auto; display: block; margin: 1em 0;">
   <source src="/files/06-2026.mp4" type="video/mp4" />
   Your browser doesn't support embedded video. <a href="/files/06-2026.mp4">Download the video</a>.
 </video>
+<script>
+  // Kick autoplay videos back into life on every page-show (handles bfcache
+  // restores from back/forward nav and most "video stuck black" cases).
+  (function () {
+    var kick = function () {
+      document.querySelectorAll('video[autoplay]').forEach(function (v) {
+        try { v.load(); } catch (e) {}
+        var p = v.play();
+        if (p && p.catch) p.catch(function () {});
+      });
+    };
+    kick();
+    window.addEventListener('pageshow', kick);
+    document.addEventListener('visibilitychange', function () {
+      if (!document.hidden) kick();
+    });
+  })();
+</script>
 
 My first publication was accepted to **ICLR 2026** (Poster). We introduce a neurosymbolic planning framework that brings symbolic guarantees to LLM agents in partially-observable environments. It improves on previous baselines by 373% and attains state-of-the-art across central benchmarks.
 
